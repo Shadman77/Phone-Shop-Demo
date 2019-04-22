@@ -1,0 +1,150 @@
+/*https://github.com/Shadman77, https://github.com/Shadman77/HTML-Card-Slider*/
+
+
+/*
+MIT License
+
+Copyright (c) 2018 Shadman Saif Anonno
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+body {
+    margin: 0px;
+    /*Upto the user*/
+    padding: 0px;
+    /*Upto the user*/
+}
+
+.parentSliderContainer {
+    /*For housing the buttons and tileSliderContainer*/
+    position: relative;
+    /*Required for button placement*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tileSliderContainer {
+    padding-left: 20px;
+    /*Depends on the size of the buttons but is as required by the user*/
+    padding-right: 20px;
+    /*Depends on the size of the buttons but is as required by the user*/
+    /*background-color: orange;Upto the user*/
+    white-space: nowrap;
+    /*To allow the tiles to line up horizontally one after another*/
+    overflow-x: hidden;
+    /*To hide the scrollbar*/
+    width: calc(100%-40px);
+    /*for margins of the children*/
+    /*border: 2px solid black;*/
+    /*Requered to prevent element selection when sliding*/
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.tiles {
+    /*All properties are upto the user*/
+    width: 200px;
+    margin-bottom: 40px;
+    display: inline-block;
+    /*color: white;*/
+}
+
+.leftArrowButton {
+    font-size: 30px;
+    /*Upto the user*/
+    color: grey;
+    /*Upto the user*/
+    position: absolute;
+    /*For positioning the button*/
+    height: 100%;
+    /*For vertically aligning the arrow*/
+    left: 0;
+    /*For positioning the button*/
+    top: 0;
+    /*For positioning the button*/
+    background-color: transparent;
+    /*Upto the user but recommended to be not changed*/
+    border: none;
+    /*Upto the user but recommended to be not changed*/
+    cursor: pointer;
+    /*Upto the user but recommended to be not changed*/
+    overflow: hidden;
+    /*Upto the user but recommended to be not changed*/
+    outline: none;
+    /*Upto the user but recommended to be not changed*/
+    z-index: 10;
+}
+
+.leftArrowButton:focus {
+    outline: none;
+}
+
+.leftArrowButton:active {
+    color: black;
+}
+
+.rightArrowButton {
+    font-size: 30px;
+    /*Upto the user*/
+    color: grey;
+    /*Upto the user*/
+    position: absolute;
+    /*For positioning the button*/
+    height: 100%;
+    /*For vertically aligning the arrow*/
+    right: 0;
+    /*For positioning the button*/
+    top: 0;
+    /*For positioning the button*/
+    background-color: Transparent;
+    /*Upto the user but recommended to be not changed*/
+    border: none;
+    /*Upto the user but recommended to be not changed*/
+    cursor: pointer;
+    /*Upto the user but recommended to be not changed*/
+    overflow: hidden;
+    /*Upto the user but recommended to be not changed*/
+    outline: none;
+    /*Upto the user but recommended to be not changed*/
+    z-index: 10;
+}
+
+.rightArrowButton:focus {
+    outline: none;
+}
+
+.rightArrowButton:active {
+    color: black;
+}
+
+.parentSliderContainer button::-moz-focus-inner {
+    border: 0;
+    /*Prevent dotted outline when clicked in firefox*/
+}

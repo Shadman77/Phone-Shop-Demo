@@ -1,0 +1,170 @@
+@charset "utf-8";
+.cardShadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Home Carousel*/
+
+.homeCarouselImg {
+    object-fit: cover;
+    /* Do not scale the image */
+    object-position: right center;
+    /* Center the image within the element */
+}
+
+
+/*Card*/
+
+.cardWrapper {
+    position: relative;
+    margin: 20px;
+}
+
+.cardSpecBtn {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    z-index: 2;
+    font-size: 30px;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.cardViewBtn {
+    position: absolute;
+    bottom: -20px;
+    left: 15%;
+    width: 70%;
+}
+
+.card {
+    padding: 10px;
+}
+
+#homeOffer:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Showcase*/
+
+.showCaseHead {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+}
+
+.showCaseFoot {
+    margin-bottom: 0px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.showCaseCard {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #007BFF;
+}
+
+.showCaseCardChildContainer {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.showCaseCard:hover {
+    text-decoration: none;
+}
+
+.showCaseCard:hover {
+    border: 3px solid #007BFF;
+}
+
+
+/*Categories*/
+
+.catHead {
+    position: relative;
+    top: 20px;
+    z-index: 5;
+    margin-bottom: 0px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.parentSliderContainer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.catFoot {
+    position: relative;
+    top: -40px;
+    width: 120px;
+    left: calc(95% - 120px);
+}
+
+
+/*Footer*/
+
+.footerChildContainerBorder {
+    border-right: 1px solid #E2E6EA;
+}
+
+.footerChildContainer {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+/*---Media Queries --*/
+
+@media (max-width: 1200px) {
+    /*lg*/
+    /*Navbar*/
+    .navbar-collapse {
+        max-height: 70vh;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    /*md*/
+}
+
+@media (max-width: 768px) {
+    /*sm*/
+    .footerChildContainer {
+        border: none;
+    }
+}
+
+@media (max-width: 576px) {
+    /*xs*/
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
